@@ -47,6 +47,26 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	width:100%;
     font-family: 'Roboto', sans-serif;
+}
+
+
+.top-header{
+    background-image: url(./images/littlegirls.jpg);
+    background-size: cover;
+    background-position: center;
+}
+nav{
+	height: 30%;
+	background-color: bisque;
+}
+.links{
+	display:flex;
+}
+.links a{
+	justify-content: space-evenly;
+	font-size: 1.2rem;
+	color:green;
 }
