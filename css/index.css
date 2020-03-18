@@ -49,24 +49,142 @@ table {
 html, body {
 	height: 100%;
 	width:100%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+	width:100%;
 }
 
 
 .top-header{
-    background-image: url(./images/littlegirls.jpg);
-    background-size: cover;
-    background-position: center;
+	background-image: url(../images/ballongirl.jpg),linear-gradient(to bottom, rgba(118, 119, 122, 0.418), rgba(151, 99, 31, 0.73));
+	background-size: cover;
+	background-position: center;
+	height: 60vh;
+	width: 100%;
+	
 }
-nav{
-	height: 30%;
-	background-color: bisque;
-}
+
 .links{
 	display:flex;
+	justify-content: space-evenly;
 }
 .links a{
-	justify-content: space-evenly;
-	font-size: 1.2rem;
-	color:green;
+	margin: 1.5% 1% 0 1%;
+	font-size: 1.1rem;
+	color:rgb(228, 218, 218);
+	text-decoration: none;
 }
+h1{
+	font-size: 4rem;
+	margin-top: 13%;
+}
+
+h2{
+	
+	font-size: 1.5rem;
+	margin-top: 1%;
+	font-weight: lighter;
+}
+
+.cta-header h1,h2{
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	color:rgb(228, 218, 218);
+}
+ .cta-btn{
+	background-color: transparent;
+	border: 2px solid rgb(228, 218, 218);
+	padding: 2% 2%;
+	border-radius: 25px;
+	width:30%;
+	height:10%;
+	color: rgb(228, 218, 218);
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 2% 0 0 35%;
+	font-weight: bold;
+	
+	
+}
+.cards{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+	grid-gap: 1rem;
+	margin: 4%;
+}
+
+
+
+.card{
+
+	border: 2px solid #e7e7e7;
+    padding: .5rem;
+	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+	border-radius: 5%;
+	max-width: 100%;
+	overflow: hidden;
+	display: flex;
+  flex-direction: column;
+  
+}
+.container{
+	padding: 1% 3%;
+	border-radius: 5%;
+	display: flex;
+  flex-direction: column;
+	
+}
+
+.card img{
+	border-radius: 5%;
+	width:100%;
+	background-size: cover;
+  position: relative;
+  overflow: hidden;
+} 
+
+.video-btn{
+	margin: 2% 51% 5% 35%;
+	background-color: transparent;
+	border: 2px solid  rgba(12, 20, 59, 0.616) ;
+	padding: 2% 2%;
+	border-radius: 25px;
+	width:30%;
+	height:10%;
+	color: rgba(12, 20, 59, 0.616);
+	font-size: 1.2rem;
+	text-align: center;	
+	font-family: 'Poppins', sans-serif ;
+	
+}
+
+footer{
+	width:100%;
+	height: 15%;
+	border-top: 1px solid rgba(87, 84, 84, 0.123);
+	background-color: rgba(255, 254, 254, 0.438);
+
+}
+
+.footer-nav p{
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif ;
+	font-size: 1rem;
+	margin:2.5%;
+	color: rgba(87, 84, 84, 0.555);
+}
+.icons{
+	display:flex;
+	justify-content: flex-end;
+	
+}
+.icons img{
+	width: 3%;
+}
+
+
