@@ -49,21 +49,26 @@ table {
 html, body {
 	height: 100%;
 	width:100%;
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
+	margin:0px;
+	padding: 0px;
+	overflow-x: hidden;
 }
 header{
-	width:100%;
+	max-width:100%;
 }
 
 
 .top-header{
-	background-image: url(../images/ballongirl.jpg),linear-gradient(to bottom, rgba(118, 119, 122, 0.418), rgba(151, 99, 31, 0.73));
+	background-image: url(../images/ballongirl.jpg);
 	background-size: cover;
 	background-position: center;
-	height: 60vh;
-	width: 100%;
+	height: 80vh;
+	max-width: 100%;
+	overflow: hidden;
 	
 }
+
 
 .links{
 	display:flex;
@@ -78,6 +83,7 @@ header{
 h1{
 	font-size: 4rem;
 	margin-top: 13%;
+	line-height: 1.4;
 }
 
 h2{
@@ -86,6 +92,7 @@ h2{
 	margin-top: 1%;
 	font-weight: lighter;
 }
+
 
 .cta-header h1,h2{
 	display:flex;
@@ -103,26 +110,42 @@ h2{
 	color: rgb(228, 218, 218);
 	font-size: 1.2rem;
 	text-align: center;
-	margin: 2% 0 0 35%;
+	margin: 2% 50% 5% 35%;
 	font-weight: bold;
 	
 	
 }
+
+.cta-btn:hover{
+	animation: pulse 1s infinite;
+  transition: .3s;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(.9);
+  }
+    100% {
+    transform: scale(1);
+  }
+}
+
 .cards{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: auto;
 	grid-gap: 1rem;
 	margin: 4%;
+	
 }
 
 
 
 .card{
-
-	border: 2px solid #e7e7e7;
     padding: .5rem;
-	box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+	box-shadow: 7px 13px 60px -10px rgba(0,0,0,0.09);
 	border-radius: 5%;
 	max-width: 100%;
 	overflow: hidden;
@@ -130,11 +153,12 @@ h2{
   flex-direction: column;
   
 }
-.container{
-	padding: 1% 3%;
-	border-radius: 5%;
-	display: flex;
-  flex-direction: column;
+.container h4{
+	font-family: 'Poppins', sans-serif;
+	font-weight: lighter;
+	color: rgba(12, 20, 59, 0.801);
+	text-align: center;
+	margin:2%;
 	
 }
 
@@ -147,7 +171,6 @@ h2{
 } 
 
 .video-btn{
-	margin: 2% 51% 5% 35%;
 	background-color: transparent;
 	border: 2px solid  rgba(12, 20, 59, 0.616) ;
 	padding: 2% 2%;
@@ -157,6 +180,7 @@ h2{
 	color: rgba(12, 20, 59, 0.616);
 	font-size: 1.2rem;
 	text-align: center;	
+	margin: 2% 51% 5% 35%;
 	font-family: 'Poppins', sans-serif ;
 	
 }
